@@ -1,0 +1,10 @@
+    const [selected, setSelected] = useState(Options[0])
+    const [showdropDown, setshowdropDown] = useState(true);
+    return <div>
+        <button onClick={() =>setshowdropDown(!showdropDown)}>Toggle</button>
+        {
+         showdropDown ?
+        <DropDown selected ={selected} onselectedChange={setSelected} Option = {Options}/>
+        :null
+        
+}
